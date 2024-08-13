@@ -39,6 +39,7 @@ function Portfolio() {
 
       <h4 className="title about" style={{ fontSize: '40px', fontWeight: '400' }}>About me</h4>
       <p className="titlee" style={{ fontSize: '25px' }}>
+        
         Namaste !!
       </p>
       <p className="titlee" style={{ fontSize: '25px' }}>
