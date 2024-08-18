@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { gsap } from 'gsap';
 import './style.css';
-
 function Portfolio() {
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
 
@@ -13,6 +13,13 @@ function Portfolio() {
   useEffect(() => {
     // Toggle the body class based on the darkMode state
     document.body.className = darkMode ? 'dark' : 'light';
+    
+    // GSAP rotation animation
+    gsap.fromTo(
+      '.theme-icon', 
+      { rotation: 0 }, 
+      { rotation: 360, duration: 0.8}
+    );
   }, [darkMode]);
 
   return (
@@ -33,6 +40,7 @@ function Portfolio() {
         >
           <FontAwesomeIcon
             icon={darkMode ? faSun : faMoon}  // Toggle between sun and moon icon based on darkMode state
+            className="theme-icon" // Add a class to target the icon for animation
             style={{ fontSize: '24px' }}  // Adjust icon size here
           />
         </div>
