@@ -14,6 +14,12 @@ function Portfolio() {
     // Toggle the body class based on the darkMode state
     document.body.className = darkMode ? 'dark' : 'light';
     
+
+
+
+
+
+    
     // GSAP rotation animation
     gsap.fromTo(
       '.theme-icon', 
