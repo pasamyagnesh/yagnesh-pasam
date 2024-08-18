@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Default to dark mode */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .Container {
     font-family: 'EB Garamond', serif;
     color: #fff; /* Default to white text for dark mode */
     text-align: left;
     direction: ltr;
-    padding-left: 20px;
-    background-color: #000; /* Default to dark mode */
+    padding: 300px 500px;
+    margin: 0px 200px; /* Adjust margin: top-bottom 0px, left-right 300px */
+    background-color: #000000d7; /* Default to dark mode */
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.light {
+    background-color: #fff;
 }
 
 .Container.light {
@@ -23,13 +35,15 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
-title {
+
+.title {
     margin-bottom: 20px;
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     margin-top: 10px;
-  }
+}
+
 .title {
     font-family: 'EB Garamond', serif;
     font-size: 28px;
@@ -72,9 +86,24 @@ a::after {
 }
 
 .Container.dark a {
-    color: #ffffff; /* Blue color for dark mode */
+    color: #ffffff; /* White color for dark mode */
 }
 
 .Container.dark a::after {
     background: #ffffff;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1100px) {
+    .Container {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 0; /* Remove left-right margins */
+    }
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .Container {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 0; /* Remove left-right margins */
+    }
 }

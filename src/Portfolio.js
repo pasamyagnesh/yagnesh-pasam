@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
@@ -9,6 +9,11 @@ function Portfolio() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    // Toggle the body class based on the darkMode state
+    document.body.className = darkMode ? 'dark' : 'light';
+  }, [darkMode]);
 
   return (
     <div className={`Container ${darkMode ? 'dark' : 'light'}`} style={{ padding: '30px 22px' }}>
@@ -39,7 +44,6 @@ function Portfolio() {
 
       <h4 className="title about" style={{ fontSize: '40px', fontWeight: '400' }}>About me</h4>
       <p className="titlee" style={{ fontSize: '25px' }}>
-        
         Namaste !!
       </p>
       <p className="titlee" style={{ fontSize: '25px' }}>
