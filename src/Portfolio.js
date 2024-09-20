@@ -55,6 +55,10 @@ function Portfolio() {
       <h5 className="subtitle" style={{ fontSize: '28px', fontStyle: 'italic', fontWeight: '300' }}>
         Backend / Design
       </h5>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={require('./Nature.jpg')} alt="Nature" style={{ width: '1100px', height: '550px', margin: '0px 0px' }} />
+</div>
+
 
       <h4 className="title about" style={{ fontSize: '40px', fontWeight: '400' }}>About me</h4>
       <p className="titlee" style={{ fontSize: '25px' }}>
