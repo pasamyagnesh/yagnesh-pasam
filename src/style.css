@@ -12,7 +12,8 @@ body {
     color: #fff; /* Default to white text for dark mode */
     text-align: left;
     direction: ltr;
-    padding: 300px 500px;
+    
+    padding: 300px 600px;
     margin: 0px 200px; /* Adjust margin: top-bottom 0px, left-right 300px */
     background-color: #000000d7; /* Default to dark mode */
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -106,4 +107,23 @@ a::after {
         padding: 20px; /* Adjust padding for smaller screens */
         margin: 0; /* Remove left-right margins */
     }
+}
+/* Links in dark mode */
+.Container.dark a {
+    color: lightgreen; /* Light green for dark mode */
+}
+
+/* Links in light mode */
+.Container.light a {
+    color: #bc7a00; /* Default color for light mode */
+}
+.experience-list {
+    padding-left: 20px; /* Indentation for the list */
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.experience-item {
+    font-size: 25px; /* Font size for list items */
+    font-family: 'EB Garamond', serif; /* Use your preferred font */
+    margin-bottom: 10px; /* Spacing between items */
 }
