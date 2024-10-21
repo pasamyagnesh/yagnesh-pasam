@@ -53,10 +53,55 @@ function Portfolio() {
       </div>
 
       <h5 className="subtitle" style={{ fontSize: '28px', fontStyle: 'italic', fontWeight: '300' }}>
-        Backend / Design
+        Backend developer / Design
       </h5>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <img src={require('./Nature.jpg')} alt="Nature" style={{ width: '1100px', height: '550px', margin: '0px 0px' }} />
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+  <img 
+    src={require('./yagnesh.jpeg')} 
+    alt="Nature" 
+    style={{ 
+      width: '300px', 
+      height: '300px', 
+      margin: '0px 0px', 
+      borderRadius: '15%', // This gives the image rounded corners
+    }} 
+  />
+
+<div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
+  <a 
+    href="https://drive.google.com/file/d/1Xh0zDQ6kz0_70l_0DxhG3AHUivq06R2W/view?usp=drive_link" 
+    style={{ textDecoration: 'none', color: 'lightgreen' }}
+  >
+    Resume
+  </a>
+  <a 
+    href="https://x.com/yagneshpasam?lang=en" 
+    style={{ textDecoration: 'none', color: 'lightgreen' }}
+  >
+    Twitter
+  </a>
+  <a 
+    href="https://github.com/pasamyagnesh" 
+    style={{ textDecoration: 'none', color: 'lightgreen' }}
+  >
+    Github
+  </a>
+  <a 
+    href="https://www.stopstalk.com/user/profile/yagnesh2004" 
+    style={{ textDecoration: 'none', color: 'lightgreen' }}
+  >
+    Stopstack
+  </a>
+  <a 
+    href="https://www.linkedin.com/in/yagneshpasam/" 
+    style={{ textDecoration: 'none', color: 'lightgreen' }}
+  >
+    LinkedIn
+  </a>
+</div>
+
+</div>
 </div>
 
 
@@ -65,7 +110,8 @@ function Portfolio() {
         Namaste !!
       </p>
       <p className="titlee" style={{ fontSize: '25px' }}>
-          My name is <i>Pasam Yagnesh</i>, and I am studying Computer Science. I have a passion for developing useful products and exploring open-source technologies. Previously, I worked on client-server architecture using JavaScript.<br/><br/> I developed the <a href="https://dork-application.vercel.app/">Dork application.</a>
+          My name is <i>Pasam Yagnesh</i>, and I am studying Computer Science. I have a passion for developing useful products and exploring open-source technologies. Previously, I worked on client-server architecture using JavaScript.<br/><br/> I developed the <a  style={{ color: 'lightgreen', textDecoration: 'none' }}
+ href="https://dork-application.vercel.app/" >Dork application.</a>
           It is a problem-solving platform designed for individuals who want to enhance their algorithmic problem-solving skills in over 30 topics, including Bit Manipulation, Graphs, Dynamic Programming, and Greedy algorithms.
           <br />
           <br />
@@ -75,20 +121,14 @@ function Portfolio() {
       <h4 className="title" style={{ fontSize: '40px', fontWeight: '400' }}>Technology Suite</h4>
       <ul style={{ fontSize: '23px', paddingLeft: '20px' }}>
         <li>Languages: <span style={{ marginLeft: '10px' }}>Python, C++, Java</span></li>
-        <li>Frontend: <span style={{ marginLeft: '10px' }}>EJS, CSS, Javascript</span></li>
-        <li>Backend: <span style={{ marginLeft: '10px' }}>Node.js, Express.js</span></li>
-        <li>Database: <span style={{ marginLeft: '10px' }}>PostgreSQL, Supabase</span></li>
+        <li>Frontend: <span style={{ marginLeft: '10px' }}>HTML, EJS, CSS, Javascript</span></li>
+        <li>Backend: <span style={{ marginLeft: '10px' }}>Node.js, Express.js, Flask</span></li>
+        <li>Database: <span style={{ marginLeft: '10px' }}>PostgreSQL, Supabase, MongoDB</span></li>
         <li>Tools: <span style={{ marginLeft: '10px' }}>VSCode, Vercel, Ngrok, Postman</span></li>
         <li>Version Control System: <span style={{ marginLeft: '10px' }}>Git & GitHub</span></li>
       </ul>
 
-      <div style={{ marginTop: '20px' }}>
-        <a href="https://drive.google.com/file/d/1lzHYxmPVQc-I8X48mJzn0zK_GEp638CS/view" style={{ display: 'block', marginBottom: '10px' }}>Resume</a>
-        <a href="https://x.com/yagneshpasam?lang=en" style={{ display: 'block', marginBottom: '10px' }}>Twitter</a>
-        <a href="https://github.com/pasamyagnesh" style={{ display: 'block', marginBottom: '10px' }}>Github</a>
-        <a href="https://www.stopstalk.com/user/profile/yagnesh2004" style={{ display: 'block', marginBottom: '10px' }}>Stopstack</a>
-        <a href="https://www.linkedin.com/in/yagneshpasam/" style={{ display: 'block', marginBottom: '10px' }}>Linkedin</a>
-      </div>
+  
     </div>
   );
 }
