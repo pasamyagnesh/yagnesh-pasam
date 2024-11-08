@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { gsap } from 'gsap';
 import './style.css';
+import Project from './Project';  // Adjust the path if Project.js is in a different folder
 
 function Portfolio() {
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
@@ -159,10 +160,8 @@ function Portfolio() {
       </p>
       <p className="titlee" style={{ fontSize: '25px' }}>
         My name is <i>Pasam Yagnesh</i>, and I am studying Computer Science. I have a passion for developing useful products and exploring open-source technologies. Previously, I worked on client-server architecture using JavaScript.
-        <br/><br/>
-        I developed the <a style={{ color: darkMode ? 'lightgreen' : '#bc7a00', textDecoration: 'none' }} href="https://dork-application.vercel.app/">Dork application</a>.
-        It is a problem-solving platform designed for individuals who want to enhance their algorithmic problem-solving skills in over 30 topics, including Bit Manipulation, Graphs, Dynamic Programming, and Greedy algorithms.
-        <br /><br />
+        <br/>
+        <br />
         Currently, I am learning about how systems work at scale. My interests include math, coding, photography, design, cinema, cryptography, and badminton.
       </p>
 
@@ -194,47 +193,8 @@ function Portfolio() {
       <h4 id="projects" className="title about" style={{ fontSize: '40px', fontWeight: '400' }}>
   Projects
 </h4>
+<Project />
 
-<div style={{ marginTop: '20px' }}>
-  <div style={{ marginBottom: '20px' }}>
-    <h3 style={{ fontSize: '28px', fontWeight: '400', fontStyle: 'italic' }}>
-      <a 
-        href="https://dork-application.vercel.app/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{ textDecoration: 'none', color: 'inherit' }}
-      >
-        Dork Application
-      </a> 
-      <span style={{ fontSize: '23px', fontStyle: 'normal', marginLeft: '10px' }}>March 2024</span>
-    </h3>
-    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '10px',fontSize:'23px' }}>
-      <li>Developed a web application for enhancing DSA problem-solving skills; attracted a consistent user base of 50 weekly, receiving positive feedback from 85% of users.</li>
-      <li>Executed a comprehensive server-side solution utilizing Express.js, Axios, and PostgreSQL, improving data handling efficiency; the system now processes 1,500+ API requests daily without performance degradation.</li>
-      <li>Publicly deployed the server with Vercel, enabling real-time access for 1100+ visitors from 10+ countries.</li>
-      <li>Tech Stack: JavaScript, Node.js, Git, Postman, Supabase, RESTful APIs, and Vercel.</li>
-    </ul>
-  </div>
-
-  <div style={{ marginBottom: '20px' }}>
-    <h3 style={{ fontSize: '25px', fontWeight: '400', fontStyle: 'italic' }}>
-      <a 
-        href="https://epistemicon-aliet.vercel.app/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{ textDecoration: 'none', color: 'inherit' }}
-      >
-        Event Management Website
-      </a> 
-      <span style={{ fontSize: '23px', fontStyle: 'normal', marginLeft: '10px' }}>September 2024</span>
-    </h3>
-    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '10px',fontSize:'23px' }}>
-      <li>Developed a web app for EPISTEMICON 2024, providing event schedules and updates to participants.</li>
-      <li>Project Impact: 560+ users, 3300+ interactions, and 780+ sessions tracked via Google Analytics.</li>
-      <li>Tech Stack: React.js, Tailwind CSS, Google Analytics, Git, Vercel.</li>
-    </ul>
-  </div>
-</div>
 
 
 
