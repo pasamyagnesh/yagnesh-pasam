@@ -22,6 +22,15 @@ const projects = [
     image: "images/URL.png"
   },
   {
+    title: "Calendarium.io",
+    description: "A Fullstack Calendar Application.",
+    techStack: ["Next.js", "CSS", "Javascript","Html"],
+    demoLink: "https://github.com/pasamyagnesh/zenstreet.ai-assignment.git",
+    codeLink: "https://github.com/pasamyagnesh/zenstreet.ai-assignment.git",
+    date: "November 2024",
+    image: "images/Homepagee.png"
+  },
+  {
     title: "Event Management Website",
     description: "A web app for EPISTEMICON 2024, providing event schedules and updates to 560+ users.",
     techStack: ["React.js", "Tailwind CSS", "Google Analytics", "Vercel"],
